@@ -130,5 +130,13 @@ footer .footer-logo img {
   background-color: #504987;
 }
 
+@media (max-width: 768px) {
+  .logo-center-sm {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* ! end of footer */
 
