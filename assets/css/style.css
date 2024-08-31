@@ -4,3 +4,29 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+  width: 60px;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 15px !important;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  border-radius: 10px;
+  background-color: #504987;
+  color: #fff;
+}
+
