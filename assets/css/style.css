@@ -13,12 +13,8 @@ header {
   z-index: 999;
 }
 
-.navbar-brand {
-  width: 60px;
-}
-
 .navbar-brand img {
-  width: 100%;
+  width: 60px;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -34,6 +30,21 @@ header {
 }
 
 /* ! end of navbar */
+
+/* ! begin of globle selector */
+
+.b-top {
+  border-top: 1px solid #ddd;
+}
+
+.section-space {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+/* ! end of globle selector */
 
 /* ! begin of main content */
 
@@ -102,15 +113,21 @@ header {
 
 /* ? begin of feature destination */
 
-.feature-destination {
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  overflow: hidden;
-}
 
 
 /* ? end of feature destination */
 
 /* ! end of main content */
+
+/* ! begin of footer */
+
+footer .footer-logo img {
+  width: 60px;
+}
+
+.copy-right {
+  background-color: #504987;
+}
+
+/* ! end of footer */
 
