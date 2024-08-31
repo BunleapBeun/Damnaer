@@ -1,84 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Damnaer</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo/damnaer-logo.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/plugins/aos/css/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="assets/plugins/swiper-js/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   </head>
+
   <body>
 
     <!-- ! begin of header -->
-
     <header>
-      <nav class="navbar navbar-expand-lg bg-light p-0">
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
           <a class="navbar-brand" href="index.html"><img src="assets/img/logo/damnaer-logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Thing To Do
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Food &amp; Dring</a>
+                <a class="nav-link" href="food_and_drink.html">Food &amp; Dring</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Culture</a>
+                <a class="nav-link" href="culture.html">Culture</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Explore</a>
+                <a class="nav-link" href="explore.html">Explore</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="about_us.html">About Us</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
     <!-- ! end of header -->
 
     <!-- ! begin of main -->
-
-    <main>
-
+    <main class="overflow-hidden">
+      <section class="hero-banner">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/home/angkor-wat-tree.avif" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/home/art-in-angkor.avif" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/home/angkor-wat-face.avif" alt=""></div>
+          </div>
+          <div class="swiper-button-next pe-lg-5"></div>
+          <div class="swiper-button-prev ps-lg-5"></div>
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress me-lg-4 mb-lg-3">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
+        </div>
+      </section>
+      <section class="feature-destination">
+        <div class="container">
+          <h1 class="text-center" data-aos="fade-up">Feature Destination</h1>
+          <p class="fs-6 text-secondary mb-4" data-aos="fade-up">Uncover the magic of Cambodia through its iconic destinations! Marvel at
+            the
+            ancient wonders of Angkor Wat,
+            feel the pulse of history in Phnom Penh, unwind on the stunning beaches of Koh Rong, and savor the charm
+            of
+            Kampot's lush landscapes. Each destination is a treasure trove of experiences waiting to be explored!</p>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up">
+              <div class="card">
+                <img src="assets/img/home/angkor-wat-card.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Angkor Wat</h5>
+                  <p class="card-text">Discover the gateway to the magnificent Angkor Wat, a UNESCO World Heritage site
+                    and one of the most important archaeological sites in Southeast Asia. Siem Reap is a vibrant city
+                    that blends rich...</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up">
+              <div class="card">
+                <img src="assets/img/home/angkor-wat-face.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up">
+              <div class="card">
+                <img src="assets/img/home/angkor-wat.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up">
+              <div class="card">
+                <img src="assets/img/home/angkor-wat.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
     <!-- ! end of main -->
 
     <!-- ! begin of footer -->
-
     <footer>
 
     </footer>
-
     <!-- ! end of footer -->
 
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/aos/js/aos.js"></script>
+    <script src="assets/plugins/swiper-js/js/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        speed: 1000,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          }
+        }
+      });
+    </script>
   </body>
+
 </html>
