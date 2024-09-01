@@ -169,6 +169,11 @@ transform: rotate(-90deg);
 
 /* ? begin of feature destination */
 
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
 
 
 /* ? end of feature destination */
