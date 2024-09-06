@@ -98,6 +98,19 @@ header {
   font-size: 25px;
 }
 
+.text-cut {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.star-rate i {
+  font-size: 15px;
+  color: gold;
+}
+
 /* ! end of globle selector */
 
 /* ! begin of main content */
@@ -107,7 +120,6 @@ header {
 .hero-banner {
   width: 100vw;
   height: 100vh;
-
 }
 
 .swiper {
@@ -167,9 +179,9 @@ header {
 .swiper-button-prev {
   position: absolute;
   top: var(--swiper-navigation-top-offset, 50%);
-  width: calc(var(--swiper-navigation-size) / 44* 27);
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
-  margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
   z-index: 10;
   cursor: pointer;
   display: flex;
@@ -213,24 +225,48 @@ header {
 }
 
 .swiper-pagination-bullet {
-  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
   display: inline-block;
   border-radius: var(--swiper-pagination-bullet-border-radius, 50%) !important;
-  background: var(--swiper-pagination-bullet-inactive-color, #504987) !important;
-  opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+  background: var(
+    --swiper-pagination-bullet-inactive-color,
+    #504987
+  ) !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 
 /* ? end of hero banner */
 
 /* ? begin of feature destination */
 
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+.card {
+  border-radius: 10px !important;
 }
 
+.card .image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card .image img {
+  transition: 0.3s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover .image img {
+  transform: scale(1.1);
+}
 
 /* ? end of feature destination */
 
@@ -240,6 +276,22 @@ header {
 
 footer .footer-logo img {
   width: 60px;
+}
+
+.footer-list {
+  padding-left: 20px;
+  /* list-style-type: none; */
+}
+
+.footer-list .footer-item .footer-link {
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-list .footer-item .footer-link:hover {
+  color: #504987 !important;
+  padding-left: 10px;
 }
 
 .copy-right {
