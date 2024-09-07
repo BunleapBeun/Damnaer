@@ -24,15 +24,37 @@ header {
   padding: 5px 15px !important;
 }
 
+.navbar-nav .nav-item .nav-link:hover {
+  color: #504987;
+}
+
 .navbar-nav .nav-item .nav-link.active {
   border-radius: 10px;
   background-color: #504987;
   color: #fff;
 }
 
+.dropdown-menu li .dropdown-item {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  top: 100px;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+  color: #504987;
+}
+
 /* ! end of navbar */
 
 /* ! begin of globle selector */
+
+.bg-main {
+  background-color: #504987 !important;
+}
 
 .b-top {
   border-top: 1px solid #ddd;
@@ -225,20 +247,14 @@ header {
 }
 
 .swiper-pagination-bullet {
-  width: var(
-    --swiper-pagination-bullet-width,
-    var(--swiper-pagination-bullet-size, 8px)
-  );
-  height: var(
-    --swiper-pagination-bullet-height,
-    var(--swiper-pagination-bullet-size, 8px)
-  );
+  width: var(--swiper-pagination-bullet-width,
+      var(--swiper-pagination-bullet-size, 8px));
+  height: var(--swiper-pagination-bullet-height,
+      var(--swiper-pagination-bullet-size, 8px));
   display: inline-block;
   border-radius: var(--swiper-pagination-bullet-border-radius, 50%) !important;
-  background: var(
-    --swiper-pagination-bullet-inactive-color,
-    #504987
-  ) !important;
+  background: var(--swiper-pagination-bullet-inactive-color,
+      #504987) !important;
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 
@@ -271,6 +287,19 @@ header {
 /* ? end of feature destination */
 
 /* ! end of main content */
+
+/* ! begin of contruction */
+.contruction-content {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.hero-banner-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* ! end of contruction */
 
 /* ! begin of footer */
 
